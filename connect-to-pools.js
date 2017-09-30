@@ -61,7 +61,7 @@ const pool = new Pool({
 const miner = new Miner({
   chain: chain,
   mempool: mempool,
-  address: 'msz2MyaEGBtYxME9FZ28aTcbKw3aoL8wUB',
+  address: 'n1NrMoKvnPeMB9q5anD4H5WCConHSp991T',
   useWorkers: true,
 });
 miner.open();
@@ -81,6 +81,13 @@ rl.on('line', (input) => {
     })().catch(err => console.log(err.stack));
     return;
   }
+  if (input === 'tx') {
+    (async function() {
+      console.log('tx');
+    })().catch(err => console.log(err.stack));
+    return;
+  }
+
   console.log('===============================================================');
 });
 

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node ./connect-to-peer.js",
-    "pool": "babel-node ./connect-to-pools.js"
+    "pool": "babel-node ./connect-to-pools.js",
+    "tx": "babel-node ./create-transaction.js"
   },
   "author": "",
   "license": "ISC",
